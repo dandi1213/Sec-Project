@@ -1,0 +1,130 @@
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya untuk body halaman */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Gaya judul halaman */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Styling tabel */
+table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transform: scale(0.98);
+    transition: transform 0.3s ease-in-out;
+}
+
+table:hover {
+    transform: scale(1);
+}
+
+/* Gaya untuk header tabel */
+th {
+    background-color: #5C6BC0;
+    color: white;
+    padding: 14px;
+    text-align: left;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #4e5ba6;
+}
+
+/* Gaya untuk sel tabel */
+td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 1.05em;
+    color: #555;
+    transition: background-color 0.3s ease-in-out;
+}
+
+td:hover {
+    background-color: #f4f4f4;
+}
+
+/* Gaya untuk baris tabel saat hover */
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Gaya untuk caption tabel */
+caption {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Animasi pada hover tabel */
+tr {
+    transition: background-color 0.3s ease;
+}
+
+/* Gaya untuk elemen tombol */
+button {
+    background-color: #5C6BC0;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.05em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #4e5ba6;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Gaya untuk kolom dengan informasi penting */
+th, td {
+    text-align: center;
+}
+
+/* Responsif untuk tampilan di perangkat kecil */
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
